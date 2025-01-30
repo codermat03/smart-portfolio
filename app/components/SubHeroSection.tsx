@@ -37,7 +37,7 @@ const SubHeroSection = () => {
                     What Do I Love
                 </p>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl py-4 font-bold">
-                    I'm an Instagram influencer designer <br className="hidden sm:block" /> running my own design studio
+                    I'm an YouTube influencer artist <br className="hidden sm:block" /> running my own design platform
                 </h1>
             </div>
             <div className="py-8">

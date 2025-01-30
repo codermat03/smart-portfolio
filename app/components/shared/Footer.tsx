@@ -20,7 +20,7 @@ const Footer = () => {
                 {/* Social Links */}
                 <div className="flex justify-center space-x-6 mt-4 md:mt-0">
                     <Link
-                        href="https://facebook.com"
+                        href="https://www.facebook.com/profile.php?id=100034803794411"
                         className="text-[#5f5f5f] text-2xl hover:text-blue-500 transition-colors duration-300"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -35,16 +35,16 @@ const Footer = () => {
                     >
                         <FaTwitter />
                     </Link>
-                    <Link
+                    {/* <Link
                         href="https://linkedin.com"
                         className="text-[#5f5f5f] text-2xl hover:text-blue-700 transition-colors duration-300"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <FaLinkedinIn />
-                    </Link>
+                    </Link> */}
                     <Link
-                        href="https://instagram.com"
+                        href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqa1M5Qy1DTUI5QVRWZzBnTEtqR0FlWmRyRHpHQXxBQ3Jtc0tuRVRUbXV5bjZnM1l3U2ZteUFHVVdCMzVnYzhVNFZCZlhPcTI3REFLMTZiLXFZZzQxZWF2Q2VpQUZSOXJaTUpzNWpkOFhod2VhNE5EYlZ0dVhvSEJQZUlhN3I3OXhNSEgwU3FlSGRtSFRRV1ktY3FpMA&q=https%3A%2F%2Fwww.instagram.com%2Finvites%2Fcontact%2F%3Fi%3D34053u8k2xur%26utm_content%3D876w9uq"
                         className="text-[#5f5f5f] text-2xl hover:text-pink-500 transition-colors duration-300"
                         target="_blank"
                         rel="noopener noreferrer"

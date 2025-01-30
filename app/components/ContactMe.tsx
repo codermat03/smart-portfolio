@@ -22,7 +22,7 @@ const ContactMe = () => {
                             <button className="py-3 md:text-lg text-sm px-6 bg-gradient-to-r from-[#FF5D18] to-[#F6136C] text-white font-semibold md:rounded-lg shadow-lg hover:from-[#FF027C] hover:to-[#ee0979] transition duration-300">
                                 Contact Me
                             </button>
-                            <p className="md:text-lg text-sm font-medium hover:underline cursor-pointer">hello@alikamaya.com</p>
+                            <p className="md:text-lg text-sm font-medium hover:underline cursor-pointer">mukta.officialcontact@gmail.com</p>
                         </div>
                     </div>
 

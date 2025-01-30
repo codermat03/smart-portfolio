@@ -8,7 +8,7 @@ const HeroSection = () => {
             {/* Text Content */}
             <div className="grid gap-6 md:w-1/2 px-6 md:px-0 text-center md:text-left">
                 <h1 className="text-4xl md:text-7xl font-bold">
-                    Hi, I AM <br /> Alika Maya
+                    Hi, I AM <br /> Mukta
                 </h1>
                 <p className="text-lg text-[#888888] md:w-2/3 mx-auto md:mx-0">
                     A Photographer & Business Strategist who empowers entrepreneurs to build a brand, market it on social media, and create a life they love.

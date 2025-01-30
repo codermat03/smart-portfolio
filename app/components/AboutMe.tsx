@@ -43,7 +43,7 @@ const AboutMe = () => {
                     About Me
                 </p>
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl py-4 font-bold">
-                    I'm an Instagram influencer designer running my own design
+                    I'm an YouTube influencer artist running my own design platform
                 </h1>
                 <p className="text-[#6e6e6e] text-sm sm:text-base lg:text-lg">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
@@ -61,7 +61,7 @@ const AboutMe = () => {
                         Contact Me
                     </button>
                     <p className="text-black cursor-pointer hover:text-[#FF027C] duration-300 text-sm sm:text-base lg:text-lg underline">
-                        hello@alikamaya.com
+                        mukta.officialcontact@gmail.com
                     </p>
                 </div>
             </div>
