@@ -46,11 +46,11 @@ const AboutMe = () => {
                     I'm an YouTube influencer artist running my own design platform
                 </h1>
                 <p className="text-[#6e6e6e] text-sm sm:text-base lg:text-lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    Discover fun & easy DIY projects, paper crafts, and creative ideas to bring your imagination to life!
                 </p>
                 <br />
                 <p className="text-[#6e6e6e] text-sm sm:text-base lg:text-lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                    Mukta Art & Craft is a leading YouTube channel with a passionate community of 6.9 million subscribers, dedicated to the art of paper crafting, DIY projects, and creative handmade designs. With 1,700+ engaging videos, our content ranges from school supplies and miniature crafts to unique home decor ideas.
                 </p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-6">
                     <button

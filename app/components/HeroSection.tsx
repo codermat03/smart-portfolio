@@ -1,18 +1,29 @@
 import React from 'react';
 import SubscribeForm from './SubscribeForm';
 import Image from 'next/image';
+import Link from 'next/link';
+import { FaCirclePlay } from 'react-icons/fa6';
 
 const HeroSection = () => {
     return (
-        <div id="home" className="lg:mx-auto md:mx-8 md:py-5 mt-10 flex flex-col md:flex-row items-center justify-center max-w-7xl">
+        <div id="home" className="lg:mx-auto md:mx-8 md:py-5 mt-10 flex flex-col md:flex-row items-center justify-center max-w-6xl">
             {/* Text Content */}
             <div className="grid gap-6 md:w-1/2 px-6 md:px-0 text-center md:text-left">
                 <h1 className="text-4xl md:text-7xl font-bold">
-                    Hi, I AM <br /> Mukta
+                    Hi, I AM <br /> Mukta Akter
                 </h1>
                 <p className="text-lg text-[#888888] md:w-2/3 mx-auto md:mx-0">
                     A Photographer & Business Strategist who empowers entrepreneurs to build a brand, market it on social media, and create a life they love.
                 </p>
+                <Link
+                    href="https://www.youtube.com/watch?v=bk7McNUjWgw"
+                    className="popup-youtube video-btn flex items-center gap-2 justify-center md:justify-start text-blue-500 hover:text-blue-600 transition-colors duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FaCirclePlay className="text-5xl text-[#FF4150] animate-pulse" />
+                    <span className="text-black font-semibold text-lg">Watch Video</span>
+                </Link>
                 <SubscribeForm />
             </div>
 

@@ -46,7 +46,7 @@ export default function Header() {
             <div className="container mx-auto py-5 px-6 flex items-center justify-between max-w-7xl">
                 {/* Name */}
                 <div className="text-2xl sm:text-3xl font-bold text-gray-800">
-                    <Link href="/">Alika Maya</Link>
+                    <Link href="/">Mukta Akter</Link>
                 </div>
 
                 {/* Hamburger Menu for Mobile */}

@@ -14,7 +14,7 @@ const SubscribeForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex lg:flex-none md:flex-row flex-col lg:items-center mt-6 md:gap-0 gap-4">
+        <form onSubmit={handleSubmit} className="flex lg:flex-none md:flex-row flex-col lg:items-center md:gap-0 gap-4">
             <input
                 type="email"
                 placeholder="Enter your email address"

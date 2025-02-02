@@ -5,25 +5,25 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 const SubHeroSection = () => {
     const datas = [
         {
-            platform: 'Instagram',
-            followers: '0K',
+            platform: 'Instagram followers',
+            followers: '1M',
             handle: '@alikamaya',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
             icon: <FaInstagram className="text-xl" />,
         },
         {
-            platform: 'Twitter',
-            followers: '0K',
+            platform: 'Facebook followers',
+            followers: '1M',
             handle: '@alikamaya',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
             icon: <FaTwitter className="text-xl" />,
         },
         {
-            platform: 'YouTube',
-            followers: '0K',
-            handle: '@alikamaya',
+            platform: 'YouTube subscribers',
+            followers: '6.98M',
+            handle: '@mukta_art_craft',
             description:
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
             icon: <FaYoutube className="text-xl" />,
@@ -53,7 +53,7 @@ const SubHeroSection = () => {
                             >
                                 <h2 className="text-3xl sm:text-4xl font-bold pt-10">{data.followers}</h2>
                                 <p className="text-lg sm:text-xl font-medium italic py-2">
-                                    {data.platform} followers
+                                    {data.platform}
                                 </p>
                                 <p className="mt-2 text-sm sm:text-lg flex items-center justify-center gap-2">
                                     {data.icon}

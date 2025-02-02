@@ -5,16 +5,16 @@ import { FaCirclePlay } from 'react-icons/fa6';
 
 const MiddleHeroSection = () => {
     return (
-        <div className="flex flex-wrap items-center justify-center mx-auto max-w-7xl md:py-8 px-4">
+        <div className="flex flex-wrap flex-row-reverse items-center justify-center mx-auto max-w-[1200px] md:py-8 px-4">
             {/* Text Content */}
             <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-                <div className="max-w-[400px] flex flex-col gap-4 text-center md:text-left">
+                <div className="max-w-[400px] flex flex-col gap-4 text-center md:text-left mx-auto">
                     <p className="uppercase text-[#FF4150] text-lg">Showreel</p>
                     <h1 className="text-3xl md:text-4xl font-bold">
-                        Want to stick out in a saturated market?
+                        Want to explore the world of creativity?
                     </h1>
                     <p className="text-[#525252] text-base md:text-lg">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna.
+                        At Mukta Art & Craft, we bring DIY ideas to life with fun, easy, and engaging craft tutorials! From paper crafts and school supplies to miniature art and home décor, our videos inspire millions to create.
                     </p>
                     <Link
                         href="https://www.youtube.com/watch?v=bk7McNUjWgw"
@@ -22,7 +22,7 @@ const MiddleHeroSection = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <FaCirclePlay className="text-5xl text-[#FF4150]" />
+                        <FaCirclePlay className="text-5xl text-[#FF4150] animate-pulse" />
                         <span className="text-black font-semibold text-lg">Watch Video</span>
                     </Link>
                 </div>

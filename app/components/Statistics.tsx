@@ -1,35 +1,35 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image';
 import React from 'react';
-import { FaFacebookF, FaLinkedinIn, FaPinterestP } from 'react-icons/fa6';
+// import { FaFacebookF, FaLinkedinIn, FaPinterestP } from 'react-icons/fa6';
 
 const Statistics = () => {
-    const datas = [
-        {
-            platform: 'Facebook',
-            followers: '8M',
-            handle: '@alikamaya',
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-            icon: <FaFacebookF className="" />
-        },
-        {
-            platform: 'Pinterest',
-            followers: '1.2M',
-            handle: '@alikamaya',
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-            icon: <FaPinterestP className="" />,
-        },
-        {
-            platform: 'Linkedin',
-            followers: '58K',
-            handle: '@alikamaya',
-            description:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-            icon: <FaLinkedinIn className="" />
-        },
-    ];
+    // const datas = [
+    //     {
+    //         platform: 'Facebook',
+    //         followers: '8M',
+    //         handle: '@alikamaya',
+    //         description:
+    //             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+    //         icon: <FaFacebookF className="" />
+    //     },
+    //     {
+    //         platform: 'Pinterest',
+    //         followers: '1.2M',
+    //         handle: '@alikamaya',
+    //         description:
+    //             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+    //         icon: <FaPinterestP className="" />,
+    //     },
+    //     {
+    //         platform: 'Linkedin',
+    //         followers: '58K',
+    //         handle: '@alikamaya',
+    //         description:
+    //             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+    //         icon: <FaLinkedinIn className="" />
+    //     },
+    // ];
 
     return (
         <div className="mx-auto max-w-7xl">
@@ -44,7 +44,7 @@ const Statistics = () => {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 py-8">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-6 py-8">
                 {datas.map((data, index) => (
                     <div
                         key={index}
@@ -66,7 +66,7 @@ const Statistics = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */}
 
             {/* Audience Section */}
             <div id='instagram-audience' className="flex flex-col lg:flex-row px-4 md:px-6 my-10 gap-6 lg:gap-16">
