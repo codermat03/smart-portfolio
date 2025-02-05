@@ -1,9 +1,13 @@
-/* eslint-disable react/no-unescaped-entities */
+'use client'
+
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchYouTubeStats } from '../utils/youtube';
 // import { FaFacebookF, FaLinkedinIn, FaPinterestP } from 'react-icons/fa6';
 
 const Statistics = () => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const [stats, setStats] = useState<any>(null);
     // const datas = [
     //     {
     //         platform: 'Facebook',
@@ -30,6 +34,16 @@ const Statistics = () => {
     //         icon: <FaLinkedinIn className="" />
     //     },
     // ];
+
+    useEffect(() => {
+        const getYouTubeStats = async () => {
+            const data = await fetchYouTubeStats();
+            if (data) {
+                setStats(data);
+            }
+        };
+        getYouTubeStats();
+    }, []);
 
     return (
         <div className="mx-auto max-w-7xl">
@@ -69,7 +83,8 @@ const Statistics = () => {
             </div> */}
 
             {/* Audience Section */}
-            <div id='instagram-audience' className="flex flex-col lg:flex-row px-4 md:px-6 my-10 gap-6 lg:gap-16">
+            {/* Audience Section */}
+            <div id="instagram-audience" className="flex flex-col lg:flex-row px-4 md:px-6 my-10 gap-6 lg:gap-16">
                 {/* Left Images */}
                 <div className="flex md:flex-row flex-col gap-8 md:gap-6">
                     <Image
@@ -93,35 +108,34 @@ const Statistics = () => {
                 {/* Right Content */}
                 <div className="flex flex-col gap-4 md:gap-5 mt-auto">
                     <p className="uppercase text-[#FF4150] text-base md:text-lg">@alikamaya</p>
-                    <h1 className="font-bold text-2xl md:text-4xl">Instagram + Audience</h1>
+                    <h1 className="font-bold text-2xl md:text-4xl">YouTube + Audience</h1>
                     <h2 className="text-[#757575] uppercase text-base md:text-lg underline">
-                        Instagram Audience
+                        YouTube Statistics
                     </h2>
                     <div className="flex gap-6 lg:gap-20 items-center">
                         <div>
-                            <h1 className="text-2xl md:text-4xl font-semibold">
-                                78% <span className="text-lg md:text-2xl font-normal">female</span>
-                            </h1>
-                            <h1 className="text-2xl md:text-4xl font-semibold">
-                                25-35 <span className="text-lg md:text-2xl font-normal">years old</span>
-                            </h1>
-                        </div>
-                        <div>
-                            <h1 className="font-bold text-lg md:text-2xl">
-                                0% <span className="font-normal text-sm md:text-xl">US</span>
-                            </h1>
-                            <h1 className="font-bold text-lg md:text-2xl">
-                                0% <span className="font-normal text-sm md:text-xl">UK</span>
-                            </h1>
-                            <h1 className="font-bold text-lg md:text-2xl">
-                                0% <span className="font-normal text-sm md:text-xl">CANADA</span>
-                            </h1>
+                            {stats ? (
+                                <>
+                                    <h1 className="text-2xl md:text-4xl font-semibold text-red-500">
+                                        {stats.subscribers} <span className="text-lg md:text-2xl font-normal text-black">subscribers</span>
+                                    </h1>
+                                    <h1 className="text-2xl md:text-4xl font-semibold text-red-500">
+                                        {stats.views} <span className="text-lg md:text-2xl font-normal text-black">views</span>
+                                    </h1>
+                                    <h1 className="text-2xl md:text-4xl font-semibold text-red-500">
+                                        {stats.videoCount} <span className="text-lg md:text-2xl font-normal text-black">videos</span>
+                                    </h1>
+                                </>
+                            ) : (
+                                <p>Loading statistics...</p>
+                            )}
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Additional Sections */}
+
+            {/* Additional Sections (Optional) */}
             <div className="px-4 md:px-6 flex flex-col lg:flex-row gap-6 text-center md:text-left">
                 {/* Left Side */}
                 <div className="w-full lg:w-1/2 flex flex-col gap-6">
@@ -160,7 +174,7 @@ const Statistics = () => {
                                 width={280}
                                 height={200}
                                 layout="intrinsic"
-                                className='md:mx-0 mx-auto'
+                                className="md:mx-0 mx-auto"
                             />
                             <h1 className="text-xl md:text-2xl font-semibold pt-3">Alika X Tempest</h1>
                             <p className="text-sm md:text-lg text-[#656565] pt-3">
@@ -174,7 +188,7 @@ const Statistics = () => {
                                 width={280}
                                 height={200}
                                 layout="intrinsic"
-                                className='md:mx-0 mx-auto'
+                                className="md:mx-0 mx-auto"
                             />
                             <h1 className="text-xl md:text-2xl font-semibold pt-3">Alika X Tempest</h1>
                             <p className="text-sm md:text-lg text-[#656565] pt-3">

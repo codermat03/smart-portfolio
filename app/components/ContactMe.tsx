@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactMe = () => {
     return (
-        <div className="relative w-full h-screen flex items-center justify-center">
+        <div className="relative w-full h-screen md:flex items-center justify-center">
             {/* YouTube Video Background */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
                 <iframe
