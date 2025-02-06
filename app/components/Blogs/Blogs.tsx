@@ -34,8 +34,8 @@ const blogPosts = [
 
 const Blog = () => {
   return (
-    <section className="bg-[#F9F9F9] py-16 px-6 md:px-12">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-[#F9F9F9] py-16 px-6 md:px-12 lg:px-0 max-w-6xl mx-auto">
+      <div className=" text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           📰 Blog & News
         </h2>

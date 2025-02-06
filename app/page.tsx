@@ -13,21 +13,21 @@ export default function Home() {
   return (
     <div>
       <HeroSection />
-      <div className="bg-[#F9F9F9] md:py-20 py-10">
+      <div className="bg-[#F9F9F9] md:pt-20 py-10 md:py-0">
         <MiddleHeroSection />
       </div>
 
-      <div className="bg-[#F9F9F9] md:py-20 py-10">
+      <div className="bg-[#F9F9F9]  py-10">
         <ShowcaseVideos />
       </div>
 
-      <div className="bg-[#F9F9F9] md:py-20 py-10">
-        <Services />
-      </div>
-      <div className="bg-[#F9F9F9] md:py-20 py-10">
+      <div className="bg-[#F9F9F9] py-10">
         <SubHeroSection />
       </div>
-      <div id="social-statistics" className="bg-[#F9F9F9] md:py-20 py-12">
+      <div className="bg-[#F9F9F9] py-10">
+        <Services />
+      </div>
+      <div id="social-statistics" className="bg-[#F9F9F9]  py-10">
         <Testimonials></Testimonials>
       </div>
       <div id="about" className="bg-[#F9F9F9] md:py-20">
@@ -37,10 +37,10 @@ export default function Home() {
         <Statistics />
       </div>
 
-      <div id="contact" className="bg-[#F9F9F9] md:pt-20">
+      <div id="contact" className="bg-[#F9F9F9] md:pt-5">
         <ContactMe />
       </div>
-      <div id="contact" className="bg-[#F9F9F9] md:pt-20">
+      <div id="contact" className="bg-[#F9F9F9] md:pt-10">
         <Blog></Blog>
       </div>
     </div>
