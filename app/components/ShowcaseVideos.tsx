@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 
 const videos = [
   { id: "1hL4u1-f1zo", title: "DIY Desk Organizer | Paper Crafts Idea" },
@@ -7,12 +8,31 @@ const videos = [
   { id: "lb3wSl1aDZg", title: "DIY Easy Crafts When You’re Bored" },
   { id: "bY-bxFIyUDY", title: "Easy Creative Paper Craft" },
   { id: "pbJJzE8DZcs", title: "DIY Creative Paper Craft" },
-  { id: "pbJJzE8DZcs", title: "DIY Creative Paper Craft" },
-  { id: "pbJJzE8DZcs", title: "DIY Creative Paper Craft" },
-  { id: "pbJJzE8DZcs", title: "DIY Creative Paper Craft" },
+  { id: "bN7cYoOYzGk", title: "Paper Craft Ideas for Kids" },
+  { id: "YZlJcG1PnFg", title: "Handmade Gift Box Tutorial" },
+  { id: "X2l1ovHEm7U", title: "Creative Origami DIY" },
 ];
 
 const ShowcaseVideos: React.FC = () => {
+  const [visibleVideos, setVisibleVideos] = useState(3); // Default to 3 videos for small screens
+
+  useEffect(() => {
+    const updateVisibleVideos = () => {
+      if (window.innerWidth >= 1024) {
+        setVisibleVideos(videos.length); // Show all videos on large screens
+      } else if (window.innerWidth >= 768) {
+        setVisibleVideos(6); // Show 6 videos on medium screens
+      } else {
+        setVisibleVideos(3); // Show 3 videos on small screens
+      }
+    };
+
+    updateVisibleVideos(); // Run on initial render
+    window.addEventListener("resize", updateVisibleVideos);
+
+    return () => window.removeEventListener("resize", updateVisibleVideos);
+  }, []);
+
   return (
     <section className="py-10 bg-gray-100">
       <div className="text-center py-10">
@@ -24,8 +44,8 @@ const ShowcaseVideos: React.FC = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0 max-w-6xl mx-auto">
-        {videos.map((video) => (
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 px-5 md:px-6 lg:px-0 max-w-6xl mx-auto">
+        {videos.slice(0, visibleVideos).map((video) => (
           <div
             key={video.id}
             className="rounded-lg overflow-hidden shadow-lg bg-white"
@@ -38,9 +58,6 @@ const ShowcaseVideos: React.FC = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            {/* <div className="p-4">
-                            <h3 className="text-lg font-semibold text-gray-800">{video.title}</h3>
-                        </div> */}
           </div>
         ))}
       </div>

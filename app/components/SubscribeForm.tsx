@@ -23,7 +23,7 @@ const SubscribeForm = () => {
         placeholder="Enter your email address"
         value={email}
         onChange={handleInputChange}
-        className="p-3 text-base bg-[#EFEFEF] md:w-80 focus:outline-none md:rounded-none rounded-tr-3xl"
+        className="p-3 text-base bg-[#EFEFEF] lg:w-80 focus:outline-none md:rounded-none rounded-tr-3xl"
         required
       />
       <button
@@ -31,7 +31,7 @@ const SubscribeForm = () => {
         className="py-3 px-6 text-base font-semibold md:w-auto w-full text-white rounded-tr-3xl bg-[#FF5D18] transition-all duration-500 ease-in-out 
                 hover:bg-[#ee0979]"
       >
-        Join with me now
+        Join <span className="hidden md:block md:inline">now</span>
       </button>
     </form>
   );

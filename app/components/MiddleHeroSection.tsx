@@ -6,8 +6,8 @@ const MiddleHeroSection = () => {
   return (
     <div className="flex flex-wrap items-center justify-center mx-auto max-w-6xl md:py-8 px-4 lg:px-0">
       {/* Left Side - Background Video */}
-      <div className="w-full md:w-1/2 relative h-[300px] md:h-[324px]">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+      <div className="w-full md:w-1/2 relative h-[215px] lg:h-[324px] order-[2] md:order-[1] mt-10 md:mt-0">
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden ">
           <iframe
             className="w-full h-full absolute top-0 left-0 pointer-events-none"
             src="https://www.youtube.com/embed/WgPQHOPPkA4?autoplay=1&mute=1&loop=1&playlist=WgPQHOPPkA4&controls=0&showinfo=0&modestbranding=1&rel=0"
@@ -20,11 +20,13 @@ const MiddleHeroSection = () => {
       </div>
 
       {/* Right Side - About Me Section */}
-      <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-        <div className="max-w-[400px] flex flex-col gap-4 text-center md:text-left mx-auto">
-          <p className="uppercase text-[#FF4150] text-lg">About Me</p>
-          <h1 className="text-3xl md:text-4xl font-bold">Meet the Creator</h1>
-          <p className="text-[#525252] text-base md:text-lg">
+      <div className="w-full md:w-1/2 flex justify-center md:justify-start order-[1]">
+        <div className="max-w-[400px] flex flex-col gap-4text-left mx-auto">
+          <p className="uppercase text-[#FF4150] text-lg text-center md:text-start">
+            About Me
+          </p>
+          <h1 className="text-3xl lg:text-4xl font-bold">Meet the Creator</h1>
+          <p className="text-[#525252] text-base md:text-lg hidden lg:block">
             Welcome to Mukta Art & Craft! I’m a passionate artist who loves
             sharing creative DIY ideas, from paper crafts to home décor. My goal
             is to make crafting fun and easy for everyone.
