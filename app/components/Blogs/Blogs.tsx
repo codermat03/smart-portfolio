@@ -5,30 +5,30 @@ import Image from "next/image";
 const blogPosts = [
   {
     id: 1,
-    title: "How to Build Stunning Websites in 2025",
+    title: "5 DIY Home Decor Ideas to Brighten Your Space",
     description:
-      "A comprehensive guide to web design trends, tips, and tricks for creating beautiful and functional websites in 2025.",
-    image: "https://i.postimg.cc/wMh4XZvP/5.jpg",
-    date: "March 5, 2025",
-    link: "#",
+      "Get creative with these simple yet elegant DIY home decor ideas using affordable materials!",
+    image: "https://images.zoomin.com/webresources/blog/24/25-wall-art-design-ideas/travel-memories-on-collage-poster.jpg",
+    date: "March 8, 2025",
+    link: "https://www.zoomin.com/blog/25-creative-wall-decor-ideas-to-brighten-up-your-favourite-space/",
   },
   {
     id: 2,
-    title: "The Future of Web Development: What's Next?",
+    title: "Handmade Greeting Cards: A Personal Touch for Every Occasion",
     description:
-      "Explore the future of web development, including emerging technologies and practices that will shape the digital landscape in the coming years.",
-    image: "https://i.postimg.cc/hPWHXbj6/2.jpg",
+      "Learn how to make unique, handcrafted greeting cards to surprise your loved ones.",
+    image: "https://www.promateworld.com/storage/blog/blog-images/imresizer-1719996127790.jpg",
     date: "March 12, 2025",
-    link: "#",
+    link: "https://www.promateworld.com/blog/greeting-card-design-a-personal-touch-for-special-occasions",
   },
   {
     id: 3,
-    title: "Top 5 Web Design Trends You Can't Miss",
+    title: "Best Fabric Painting Techniques for Beginners",
     description:
-      "Stay ahead of the curve with the latest web design trends that are changing the way users interact with websites.",
-    image: "https://i.postimg.cc/CLG9kBn1/3.jpg",
-    date: "March 20, 2025",
-    link: "#",
+      "Explore different fabric painting techniques and turn plain clothes into art pieces!",
+    image: "https://www.skillshare.com/blog/wp-content/uploads/2021/03/Image3.jpg",
+    date: "March 15, 2025",
+    link: "https://www.skillshare.com/en/blog/how-to-paint-on-fabric-12-expert-tips/?srsltid=AfmBOoq5s4dezezh8Taxg4Jtdpt3bYNZBVJ3pnNbSwAMgyMqT3h0n7lO",
   },
 ];
 

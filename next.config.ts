@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
       "angular.envytheme.com",
       "clipart-library.com",
       "img.freepik.com",
-      "i.postimg.cc", // ✅ Add this line
+      "i.postimg.cc",
+      'images.zoomin.com',
+      "www.promateworld.com",
+      "www.skillshare.com"
     ],
   },
 };
