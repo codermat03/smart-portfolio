@@ -8,9 +8,6 @@ const videos = [
   { id: "lb3wSl1aDZg", title: "DIY Easy Crafts When You’re Bored" },
   { id: "bY-bxFIyUDY", title: "Easy Creative Paper Craft" },
   { id: "pbJJzE8DZcs", title: "DIY Creative Paper Craft" },
-  { id: "bN7cYoOYzGk", title: "Paper Craft Ideas for Kids" },
-  { id: "YZlJcG1PnFg", title: "Handmade Gift Box Tutorial" },
-  { id: "X2l1ovHEm7U", title: "Creative Origami DIY" },
 ];
 
 const ShowcaseVideos: React.FC = () => {

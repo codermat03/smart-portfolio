@@ -1,8 +1,13 @@
+'use client'
 /* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { fetchYouTubeStats } from "../utils/youtube";
 
 const SubHeroSection = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [stats, setStats] = useState<any>(null);
+  console.log(stats)
   const datas = [
     {
       platform: "Instagram followers",
@@ -22,14 +27,22 @@ const SubHeroSection = () => {
     },
     {
       platform: "YouTube subscribers",
-      followers: "6.98M",
+      followers: "7M",
       handle: "@mukta_art_craft",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.",
       icon: <FaYoutube className="text-xl" />,
     },
   ];
-
+  useEffect(() => {
+    const getYouTubeStats = async () => {
+      const data = await fetchYouTubeStats();
+      if (data) {
+        setStats(data);
+      }
+    };
+    getYouTubeStats();
+  }, []);
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-0">
       <div className="text-center">
